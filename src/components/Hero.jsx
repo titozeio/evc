@@ -1,5 +1,6 @@
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import { BsArrowDown } from 'react-icons/bs';
+import heroImage from '/hero.png';
 import './Hero.css';
 
 const Hero = ({ t }) => {
@@ -32,7 +33,7 @@ const Hero = ({ t }) => {
                     <Col lg={6} className="hero-image-col">
                         <div className="hero-image-wrapper">
                             <img
-                                src="/hero.png"
+                                src={heroImage}
                                 alt="Electric Vehicle"
                                 className="hero-image"
                             />
