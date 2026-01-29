@@ -1,0 +1,147 @@
+.prices-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, var(--bg-gradient-start) 0%, var(--bg-gradient-end) 100%);
+}
+
+.price-category-title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.price-card {
+    border: none;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.charging-card {
+    background: var(--card-bg);
+    box-shadow: 0 5px 25px rgba(13, 110, 253, 0.1);
+}
+
+.charging-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 45px rgba(13, 110, 253, 0.2);
+}
+
+.fuel-card {
+    background: var(--card-bg);
+    box-shadow: 0 5px 25px rgba(220, 53, 69, 0.1);
+}
+
+.fuel-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 45px rgba(220, 53, 69, 0.2);
+}
+
+.featured {
+    border: 2px solid var(--primary-color);
+    position: relative;
+}
+
+.featured-badge {
+    position: absolute;
+    top: 15px;
+    right: -30px;
+    background: linear-gradient(135deg, #00e5ff 0%, #2196f3 100%);
+    color: white;
+    padding: 5px 40px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transform: rotate(45deg);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.price-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.home-charging {
+    background: linear-gradient(135deg, rgba(25, 135, 84, 0.15) 0%, rgba(25, 135, 84, 0.05) 100%);
+    color: #198754;
+}
+
+.medium-charging {
+    background: linear-gradient(135deg, rgba(13, 110, 253, 0.15) 0%, rgba(0, 229, 255, 0.15) 100%);
+    color: #0d6efd;
+}
+
+.fast-charging {
+    background: linear-gradient(135deg, rgba(255, 193, 7, 0.15) 0%, rgba(253, 126, 20, 0.15) 100%);
+    color: #fd7e14;
+}
+
+.fuel-icon {
+    background: linear-gradient(135deg, rgba(220, 53, 69, 0.15) 0%, rgba(220, 53, 69, 0.05) 100%);
+    color: #dc3545;
+}
+
+.price-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+.price-amount {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.75rem;
+}
+
+.price-time {
+    display: flex;
+    align-items: center;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.price-description {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-bottom: 0;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .prices-section {
+        padding: 60px 0;
+    }
+
+    .price-category-title {
+        font-size: 1.5rem;
+    }
+
+    .price-amount {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .price-category-title {
+        font-size: 1.25rem;
+    }
+
+    .price-amount {
+        font-size: 1.5rem;
+    }
+
+    .price-card {
+        margin-bottom: 1rem;
+    }
+}
