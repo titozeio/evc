@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Navbar, Nav, Container, Button } from 'react-bootstrap';
 import { BsSunFill, BsMoonFill, BsGlobe } from 'react-icons/bs';
-import chargingIcon from '/charging.png';
 import './Navigation.css';
 
 const Navigation = ({ t, language, setLanguage, theme, setTheme }) => {
@@ -32,7 +31,6 @@ const Navigation = ({ t, language, setLanguage, theme, setTheme }) => {
         >
             <Container>
                 <Navbar.Brand href="#home" className="brand">
-                    <img src={chargingIcon} alt="Logo" className="brand-logo" />
                     <span className="brand-text">EV Calculator</span>
                 </Navbar.Brand>
 

@@ -1,6 +1,5 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import { BsLightningChargeFill, BsGithub, BsTwitter, BsLinkedin } from 'react-icons/bs';
-import chargingIcon from '/charging.png';
 import './Footer.css';
 
 const Footer = ({ t }) => {
@@ -12,7 +11,6 @@ const Footer = ({ t }) => {
                 <Row className="g-4">
                     <Col lg={4}>
                         <div className="footer-brand">
-                            <img src={chargingIcon} alt="Logo" className="footer-logo" />
                             <h5>EV Calculator</h5>
                         </div>
                         <p className="footer-description">
