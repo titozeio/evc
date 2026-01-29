@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/evc/charging.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta Tags -->
+  <title>Calculadora de Ahorro - Vehículos Eléctricos | EV Calculator</title>
+  <meta name="description"
+    content="Calcula cuánto puedes ahorrar al cambiar a un vehículo eléctrico. Compara costes de electricidad vs gasolina, incluye ayudas del Plan Moves 3 y achatarramiento." />
+  <meta name="keywords"
+    content="vehículo eléctrico, calculadora ahorro, Plan Moves 3, coche eléctrico, ahorro energético, movilidad sostenible" />
+  <meta name="author" content="EV Calculator" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://evcalculator.com/" />
+  <meta property="og:title" content="Calculadora de Ahorro - Vehículos Eléctricos" />
+  <meta property="og:description" content="Descubre cuánto puedes ahorrar al cambiar a un vehículo eléctrico" />
+  <meta property="og:image" content="/evc/hero.png" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://evcalculator.com/" />
+  <meta property="twitter:title" content="Calculadora de Ahorro - Vehículos Eléctricos" />
+  <meta property="twitter:description" content="Descubre cuánto puedes ahorrar al cambiar a un vehículo eléctrico" />
+  <meta property="twitter:image" content="/hero.png" />
+
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#0d6efd" />
+
+  <!-- Accessibility -->
+  <meta name="color-scheme" content="light dark" />
+
+  <!-- Set theme before React loads to prevent flash -->
+  <script>
+    (function () {
+      const theme = localStorage.getItem('theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+  <script type="module" crossorigin src="/evc/assets/index-BaOzOQVK.js"></script>
+  <link rel="stylesheet" crossorigin href="/evc/assets/index-Fv8iUUcR.css">
+</head>
+
+<body>
+  <div id="root">
+    <!-- Loading indicator -->
+    <div
+      style="display: flex; justify-content: center; align-items: center; min-height: 100vh; background: linear-gradient(135deg, #0a1929 0%, #1a2332 50%, #0d47a1 100%); color: white; font-family: Arial, sans-serif;">
+      <div style="text-align: center;">
+        <h1 style="font-size: 2rem; margin-bottom: 1rem;">⚡ Cargando EV Calculator...</h1>
+        <div
+          style="width: 50px; height: 50px; border: 5px solid rgba(255,255,255,0.3); border-top-color: #00e5ff; border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <style>
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</body>
+
+</html>
