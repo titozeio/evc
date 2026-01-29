@@ -126,6 +126,60 @@ Cambia entre español e inglés con el botón de idioma en la navegación. Las p
 - **Consumo eléctrico**: 13.9 kWh/100km
 - **Consumo gasolina**: 7.5 L/100km
 
+## 🚀 Deployment a GitHub Pages
+
+Este proyecto está configurado para desplegarse automáticamente en GitHub Pages.
+
+### Opción 1: Deployment Automático (Recomendado)
+
+Cada vez que hagas push a la rama `main`, GitHub Actions construirá y desplegará automáticamente la aplicación.
+
+1. **Habilita GitHub Pages en tu repositorio**:
+   - Ve a `Settings` → `Pages`
+   - En "Source", selecciona `GitHub Actions`
+   - Guarda los cambios
+
+2. **Haz push de tus cambios**:
+   ```bash
+   git add .
+   git commit -m "Configure GitHub Pages deployment"
+   git push
+   ```
+
+3. **Espera a que termine el deployment**:
+   - Ve a la pestaña `Actions` en GitHub
+   - Verás el workflow "Deploy to GitHub Pages" ejecutándose
+   - Una vez completado, tu sitio estará disponible en:
+   ```
+   https://titozeio.github.io/evc/
+   ```
+
+### Opción 2: Deployment Manual
+
+Si prefieres hacer deploy manualmente:
+
+```bash
+npm run deploy
+```
+
+Este comando:
+1. Construye la aplicación (`npm run build`)
+2. Despliega el contenido de `dist/` a la rama `gh-pages`
+
+**Nota**: Para el deployment manual, asegúrate de que GitHub Pages esté configurado para usar la rama `gh-pages` en lugar de GitHub Actions.
+
+### Verificar el Deployment
+
+Una vez desplegado, tu aplicación estará disponible en:
+- **URL**: https://titozeio.github.io/evc/
+
+### Troubleshooting
+
+Si la página no carga correctamente:
+1. Verifica que `base: '/evc/'` en `vite.config.js` coincida con el nombre de tu repositorio
+2. Asegúrate de que GitHub Pages esté habilitado en la configuración del repositorio
+3. Revisa los logs del workflow en la pestaña Actions
+
 ## 🔗 Enlaces Útiles
 
 - [Plan Moves 3](https://www.idae.es/ayudas-y-financiacion/para-movilidad-y-vehiculos/programa-moves-iii)
