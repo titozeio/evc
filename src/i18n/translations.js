@@ -3,8 +3,8 @@ export const translations = {
         // Navigation
         nav: {
             calculator: 'Calculadora',
-            vehicles: 'Vehículos',
-            prices: 'Precios',
+            vehicles: 'Consumo vehículos',
+            prices: 'Precios de Carga',
             language: 'Idioma',
             theme: 'Tema'
         },
@@ -56,7 +56,7 @@ export const translations = {
 
         // Vehicles Section
         vehicles: {
-            title: 'Vehículos Populares',
+            title: 'Consumos reales',
             subtitle: 'Consumos medios reales de los vehículos más vendidos',
             electric: 'Vehículos Eléctricos',
             gasoline: 'Vehículos de Gasolina',
@@ -124,8 +124,8 @@ export const translations = {
         // Navigation
         nav: {
             calculator: 'Calculator',
-            vehicles: 'Vehicles',
-            prices: 'Prices',
+            vehicles: 'Vehicle Consumption',
+            prices: 'Charging Prices',
             language: 'Language',
             theme: 'Theme'
         },
@@ -177,7 +177,7 @@ export const translations = {
 
         // Vehicles Section
         vehicles: {
-            title: 'Popular Vehicles',
+            title: 'Real Consumption',
             subtitle: 'Real average consumption of best-selling vehicles',
             electric: 'Electric Vehicles',
             gasoline: 'Gasoline Vehicles',
