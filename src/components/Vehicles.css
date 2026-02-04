@@ -141,10 +141,41 @@
     font-weight: 800;
 }
 
+[data-theme="dark"] .stat-value {
+    color: #000000;
+}
+
+[data-theme="dark"] .consumption-highlight {
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="dark"] .consumption-highlight.gas {
+    background: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+[data-theme="dark"] .stat-label {
+    color: #495057;
+}
+
+[data-theme="dark"] .stat-icon {
+    color: #0d6efd;
+}
+
+[data-theme="dark"] .consumption-highlight.gas .stat-icon {
+    color: #dc3545;
+}
+
 .stat-value .unit {
     font-size: 0.8rem;
     font-weight: 500;
     color: var(--text-secondary);
+}
+
+[data-theme="dark"] .stat-value .unit {
+    color: #495057;
 }
 
 /* Responsive */
