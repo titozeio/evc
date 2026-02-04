@@ -22,29 +22,23 @@ const Vehicles = ({ t }) => {
                         {electricVehicles.map(vehicle => (
                             <Col key={vehicle.id} md={6} lg={3}>
                                 <Card className="vehicle-card electric-card h-100">
+                                    <div className="vehicle-image-container">
+                                        <Card.Img variant="top" src={`${import.meta.env.BASE_URL}${vehicle.image.startsWith('/') ? vehicle.image.slice(1) : vehicle.image}`} className="vehicle-image" />
+                                    </div>
                                     <Card.Body>
-                                        <div className="vehicle-icon electric-icon">
-                                            <BsLightningChargeFill size={32} />
-                                        </div>
                                         <Card.Title className="vehicle-name">{vehicle.name}</Card.Title>
                                         <div className="vehicle-stats">
-                                            <div className="stat-item">
+                                            <div className="stat-item consumption-highlight">
                                                 <BsSpeedometer2 className="stat-icon" />
                                                 <div>
                                                     <div className="stat-label">{t.vehicles.consumption}</div>
-                                                    <div className="stat-value">{vehicle.consumption} kWh/100km</div>
+                                                    <div className="stat-value">{vehicle.consumption} <span className="unit">kWh/100km</span></div>
                                                 </div>
                                             </div>
                                             <div className="stat-item">
                                                 <div>
                                                     <div className="stat-label">{t.vehicles.range}</div>
                                                     <div className="stat-value">{vehicle.range} km</div>
-                                                </div>
-                                            </div>
-                                            <div className="stat-item">
-                                                <div>
-                                                    <div className="stat-label">{t.vehicles.price}</div>
-                                                    <div className="stat-value">{vehicle.price}</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -65,23 +59,17 @@ const Vehicles = ({ t }) => {
                         {gasolineVehicles.map(vehicle => (
                             <Col key={vehicle.id} md={6} lg={3}>
                                 <Card className="vehicle-card gas-card h-100">
+                                    <div className="vehicle-image-container">
+                                        <Card.Img variant="top" src={`${import.meta.env.BASE_URL}${vehicle.image.startsWith('/') ? vehicle.image.slice(1) : vehicle.image}`} className="vehicle-image" />
+                                    </div>
                                     <Card.Body>
-                                        <div className="vehicle-icon gas-icon">
-                                            <BsFuelPumpFill size={32} />
-                                        </div>
                                         <Card.Title className="vehicle-name">{vehicle.name}</Card.Title>
                                         <div className="vehicle-stats">
-                                            <div className="stat-item">
+                                            <div className="stat-item consumption-highlight gas">
                                                 <BsSpeedometer2 className="stat-icon" />
                                                 <div>
                                                     <div className="stat-label">{t.vehicles.consumption}</div>
-                                                    <div className="stat-value">{vehicle.consumption} L/100km</div>
-                                                </div>
-                                            </div>
-                                            <div className="stat-item">
-                                                <div>
-                                                    <div className="stat-label">{t.vehicles.price}</div>
-                                                    <div className="stat-value">{vehicle.price}</div>
+                                                    <div className="stat-value">{vehicle.consumption} <span className="unit">L/100km</span></div>
                                                 </div>
                                             </div>
                                         </div>

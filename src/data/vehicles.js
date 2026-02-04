@@ -1,59 +1,31 @@
 export const electricVehicles = [
     {
         id: 1,
-        name: 'Tesla Model 3',
-        consumption: 14.5, // kWh/100km
-        range: 491,
-        price: '42.000€'
+        name: 'Toyota bZ4X',
+        consumption: 14.8, // kWh/100km
+        range: 511,
+        image: '/vehicles/toyota-bz4x.png'
     },
     {
         id: 2,
-        name: 'Volkswagen ID.3',
-        consumption: 15.8,
-        range: 425,
-        price: '38.000€'
+        name: 'Tesla Model 3',
+        consumption: 13.2,
+        range: 513,
+        image: '/vehicles/tesla-model3.png'
     },
     {
         id: 3,
-        name: 'Hyundai Ioniq 5',
-        consumption: 16.7,
-        range: 481,
-        price: '46.000€'
+        name: 'BYD Dolphin',
+        consumption: 15.2,
+        range: 427,
+        image: '/vehicles/byd-dolphin.png'
     },
     {
         id: 4,
-        name: 'Nissan Leaf',
-        consumption: 17.1,
-        range: 385,
-        price: '33.000€'
-    },
-    {
-        id: 5,
-        name: 'Renault Megane E-Tech',
-        consumption: 15.3,
-        range: 450,
-        price: '36.000€'
-    },
-    {
-        id: 6,
-        name: 'Kia EV6',
-        consumption: 16.5,
-        range: 528,
-        price: '48.000€'
-    },
-    {
-        id: 7,
         name: 'MG4 Electric',
-        consumption: 16.2,
+        consumption: 16.0,
         range: 435,
-        price: '30.000€'
-    },
-    {
-        id: 8,
-        name: 'Peugeot e-208',
-        consumption: 15.9,
-        range: 362,
-        price: '32.000€'
+        image: '/vehicles/mg4.png'
     }
 ];
 
@@ -61,49 +33,25 @@ export const gasolineVehicles = [
     {
         id: 1,
         name: 'Toyota Corolla',
-        consumption: 5.2, // L/100km
-        price: '25.000€'
+        consumption: 4.5, // L/100km
+        image: '/vehicles/toyota-corolla.png'
     },
     {
         id: 2,
-        name: 'Volkswagen Golf',
-        consumption: 5.8,
-        price: '27.000€'
+        name: 'Peugeot 2008',
+        consumption: 5.4,
+        image: '/vehicles/peugeot-2008.png'
     },
     {
         id: 3,
-        name: 'Seat León',
-        consumption: 5.6,
-        price: '24.000€'
+        name: 'Kia Sportage',
+        consumption: 6.8,
+        image: '/vehicles/kia-sportage.png'
     },
     {
         id: 4,
-        name: 'Peugeot 308',
-        consumption: 5.9,
-        price: '26.000€'
-    },
-    {
-        id: 5,
-        name: 'Renault Clio',
-        consumption: 5.3,
-        price: '19.000€'
-    },
-    {
-        id: 6,
-        name: 'Ford Focus',
-        consumption: 6.1,
-        price: '25.000€'
-    },
-    {
-        id: 7,
-        name: 'Opel Astra',
-        consumption: 5.7,
-        price: '24.000€'
-    },
-    {
-        id: 8,
-        name: 'Hyundai i30',
-        consumption: 5.5,
-        price: '23.000€'
+        name: 'Nissan Qashqai',
+        consumption: 6.2,
+        image: '/vehicles/nissan-qashqai.png'
     }
 ];
